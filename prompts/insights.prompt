@@ -1,0 +1,14 @@
+You are tasked with generating insights about the yield cases from the {type_of_data} below:
+
+----
+{inputs}
+----
+
+Rules:
+Each insight must must not state the obvious.
+
+Generate insights about the case according to the following format.
+
+----
+{output_format}
+----

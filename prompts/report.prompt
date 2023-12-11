@@ -1,0 +1,9 @@
+You are tasked with generating summmary of yield case report:
+
+Given below is the output format, which has the subsections.
+Must use bullet points.
+
+Incase you don't have enough info you can just write: No information available
+---
+{output_format}
+---
