@@ -50,7 +50,6 @@ llm = HuggingFaceLLM(
     query_wrapper_prompt=PromptTemplate("<|system|>\n</s>\n<|user|>\n{query_str}</s>\n<|assistant|>\n"),
     context_window=3900,
     max_new_tokens=256,
-    offload_folder="/notebooks/yecases/offload",
     #model_kwargs={"quantization_config": quantization_config},
     # tokenizer_kwargs={},
     generate_kwargs={"temperature": 0.7, "top_k": 50, "top_p": 0.95},
@@ -58,6 +57,7 @@ llm = HuggingFaceLLM(
     device_map="auto",
 )
 
+print("after huggingfaceLLM")
 
 
 st.set_page_config(page_title="Yield Case Analyzer", page_icon=":card_index_dividers:", initial_sidebar_state="expanded", layout="wide")
