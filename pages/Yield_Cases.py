@@ -41,8 +41,8 @@ def messages_to_prompt(messages):
 
   return prompt
 
-model_name="mistralai/Mistral-7B-v0.1"
-#model_name="HuggingFaceH4/zephyr-7b-beta"
+#model_name="mistralai/Mistral-7B-v0.1"
+model_name="HuggingFaceH4/zephyr-7b-beta"
 
 llm = HuggingFaceLLM(
     model_name=model_name,
@@ -56,6 +56,7 @@ llm = HuggingFaceLLM(
     messages_to_prompt=messages_to_prompt,
     device_map="auto",
 )
+
 
 print("after huggingfacellm")
 
